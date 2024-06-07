@@ -98,7 +98,7 @@ docker exec -it <nombre contenedor> <programa o comando>
 ### Ahora puedes acceder al contenedor de jenkins y obtener la contraseña ubicada en /var/jenkins_home/secrets/initialAdminPassword
 
 ```
-docker exec -it jenkins /var/jenkins_home/secrets/initialAdminPassword
+docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
 ![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/e556b857-00f6-46c2-a2c7-ea2c1f801d1d)
