@@ -2,11 +2,13 @@
 ```
 docker run -d --name postgresContainer --env-file=varPostgres.env postgres:11.21-alpine3.17
 ```
+![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/c4669bff-6479-46a6-8b3d-95f6de88512a)
 
 ### Crear un cliente de postgres. Usar la imagen: dpage/pgadmin4
 ```
 docker run -d -p 8080:80 --name pgadminContainer --env-file=pgadmin.env dpage/pgadmin4
 ```
+![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/ea9c1092-1ecf-477d-b4d6-726617af5eff)
 
 La figura presenta el esquema creado en donde los puertos son:
 - a: 8080
