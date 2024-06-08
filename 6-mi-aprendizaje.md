@@ -1,3 +1,2 @@
-# COMPLETAR  
-Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
-Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+# Mi aprendizaje
+Al realizar esta practica, se la llevo de manera un poco mas fluida debido a los conocimientos previos sobre docker, de como crear los contenedores y descargar las imagenes, conocer las lineas de comandos sobre estos. Por lo tanto, durante el transcurso de esta practica se entiendio mucho sobre el mapeo y operaciones, como crear una variable de entorno el cual es importante para crear un contenedor, redes en las que cada contenedor se puede establecer. Entonces se pudo lograr de manera exitosa la finalizacion de esta practica en el que se aprendio mucho sobre docker.
