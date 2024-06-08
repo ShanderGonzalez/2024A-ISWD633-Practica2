@@ -47,13 +47,31 @@ docker network ls
 ### Crear los contenedores y las redes que se presentan en el esquema. Usar para todos los contenedores la imagen de nginx:alpine
 
 ![Imagen](imagenes/esquema-ejercicio-redes.PNG)
+#### Creamos las redes
+```
+docker network create net-curso01
+docker network create net-curso02
+```
 
-# COLOCAR UNA CAPTURA DE LAS REDES EXISTENTES CREADAS
+#### Creamos los contenedores y vinculamos a sus respectivas redes
+```
+docker run -d --name nginxContainer1 --network net-curso01 nginx:alpine
+docker run -d --name nginxContainer2 --network net-curso01 nginx:alpine
+docker run -d --name nginxContainer3 --network net-curso01 nginx:alpine
+docker network connect net-curso02 nginxContainer3
+docker run -d --name nginxContainer4 --network net-curso02 nginx:alpine
+```
 
-# COLOCAR UNA(S) CAPTURAS(S) DE LOS CONTENEDORES CREADOS EN DONDE SE EVIDENCIE A QUÉ RED ESTÁN VINCULADOS
+![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/f8f01994-f9bb-448a-a45c-596790a00a7e)
+
+![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/c7e396dd-1dcf-4e91-9a69-0b319bbf6577)
+![image](https://github.com/ShanderGonzalez/2024A-ISWD633-Practica2/assets/94009521/287b6a87-766c-44bb-897f-15ebb38a31b8)
 
 ### Para eliminar las redes creadas
 ```
 docker network rm <nombre de la red>
 ```
-
+```
+docker network rm net-curso01
+docker network rm net-curso02
+```
